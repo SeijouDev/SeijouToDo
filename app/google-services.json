@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804434467869",
+    "project_id": "seijoutodo"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804434467869:android:58237a0d0ee724ef",
+        "android_client_info": {
+          "package_name": "dev.seijou.com.seijoutodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804434467869-opfufc85evf2p2a40kuabg68570nqi83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.seijou.com.seijoutodo",
+            "certificate_hash": "b5d030e9cb540fb69c28922bd90280aebe2f3e67"
+          }
+        },
+        {
+          "client_id": "804434467869-v71t42sgoa0mov3n72iq7vamoi3o3mos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkN_glBRvJc1EuNCel8t9Axi9eYn7s8Bc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
