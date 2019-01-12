@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/budget"
+            style="@style/money_indicator"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:background="@color/colorBg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <ImageButton
+            android:id="@+id/btnNewExp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@color/colorBg"
+            android:scaleType="fitCenter"
+            android:padding="18dp"
+            android:src="@drawable/ic_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/expensesList"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/layoutNoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:tint="@color/colorDivider"
+            android:src="@drawable/ic_hand_money"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:typeface="normal"
+            android:textColor="#dbdbdb"
+            android:id="@+id/txNoInfo"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text="Aún no hay nada por aquí"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView style="@style/money_indicator"
+            android:id="@+id/expensesSum"
+            android:text="400000"
+            android:textColor="@color/colorDanger"/>
+
+        <TextView style="@style/money_indicator"
+            android:id="@+id/total"
+            android:text="2100000"
+            android:textColor="@color/colorSuccess" />
+    </LinearLayout>
+
+</RelativeLayout>

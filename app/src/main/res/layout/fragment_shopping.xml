@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerShooping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/layoutNoInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:tint="#dbdbdb"
+            android:src="@drawable/ic_shopping_car"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:typeface="normal"
+            android:textColor="#dbdbdb"
+            android:id="@+id/txNoInfo"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text="Aún no hay nada por aquí"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabNewPurchase"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="80dp"
+        android:tint="#FFF"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_plus"
+        app:fabSize="normal" />
+</RelativeLayout>

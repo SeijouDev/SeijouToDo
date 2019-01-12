@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_check"
+            android:tint="#FFF" />
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SeijouToDo"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
